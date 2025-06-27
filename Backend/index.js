@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/uploads", express.static("uploads"))
 
 
-mongoose.connect('mongodb+srv://arshad:12345@cluster0.wbmwafp.mongodb.net/')
+mongoose.connect()
   .then(() => console.log("MongoDB connection is done"))
   .catch(() => console.log("Connection fail"))
 
